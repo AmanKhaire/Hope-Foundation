@@ -1,0 +1,99 @@
+.mission-vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px;
+    padding: 0 5%; /* Responsive padding */
+}
+
+/* Section Layout */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Gap between image & text */
+    flex-wrap: wrap; /* Allows wrapping */
+}
+
+/* Image Styling */
+.section img {
+    max-width: 450px; /* Reduced for better fit */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on text */
+.section .text:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+.section .text {
+    flex: 1;
+    min-width: 300px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0 5%;
+}
+
+/* Heading & Paragraph */
+.section .text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.section .text p {
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Alternating Layout */
+.mission {
+    flex-direction: row-reverse;
+}
+
+.vision {
+    flex-direction: row;
+}
+
+/* 🌟 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .section img {
+        max-width: 80%; /* Adjusting size */
+        margin-bottom: 10px;
+    }
+
+    .section .text {
+        width: 90%;
+        padding: 0;
+    }
+
+    .section .text h2,
+    .section .text p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .section img {
+        max-width: 100%;
+    }
+
+    .section .text {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

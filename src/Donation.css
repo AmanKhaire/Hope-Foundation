@@ -1,0 +1,206 @@
+.donation-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                    url('https://hopeunityfoundation.in/assets/image/13.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 3rem;
+  height: 230px;
+}
+
+.donation-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Responsive Header */
+@media only screen and (max-width: 768px) {
+  .donation-header {
+    font-size: 2.5rem;
+    height: 180px;
+    padding: 40px 15px;
+  }
+  
+  .donation-header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .donation-header {
+    font-size: 1.8rem;
+    height: 140px;
+    padding: 30px 10px;
+  }
+
+  .donation-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Campaign Cards */
+.campaign-card {
+  display: flex;
+  flex-direction: row; /* Side by side layout */
+  background: white;
+  padding: 20px;
+  margin: 8px auto;
+  border-radius: 10px;
+  width: 70%;
+  margin-top: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-image-container {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.campaign-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.campaign-text {
+  width: 60%;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #e98b18;
+}
+
+/* Donate Button */
+.donate-button {
+  background-color: #e79a15;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  width: 28%;
+  height: 19%;
+}
+
+.donate-button:hover {
+  background-color: #e87a0c;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .campaign-card {
+    width: 80%; /* Adjust width for tablets */
+    flex-direction: column; /* Stack elements */
+    align-items: center;
+    text-align: center;
+  }
+
+  .campaign-image-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .campaign-text {
+    width: 100%;
+  }
+
+  .donate-button {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 412px) { /* Samsung Galaxy */
+  .campaign-card {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .campaign-image-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .campaign-text {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .donate-button {
+    width: 60%;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Footer */
+.donation-footer {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                    url('https://hopeunityfoundation.in/assets/image/16.jpeg');
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Footer */
+@media only screen and (max-width: 768px) {
+  .donation-footer {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 412px) { /* Samsung Galaxy */
+  .donation-footer {
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+}
+.donation-subheader {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.help-us-now {
+  color: orange;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.donate-to-charity {
+  font-size: 32px;
+  font-weight: 700;
+}
+.donate-button a {
+  text-decoration: none; /* Remove underline */
+  color: white !important; /* Make text white */
+}
+
+.donate-button a:hover {
+  text-decoration: none; /* No underline on hover */
+}

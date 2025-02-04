@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 0;
+}
+
+/* Primary and Secondary Colors */
+:root {
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #6c757d; /* Grey */
+  --accent-color: #28a745; /* Green */
+  --highlight-color: #fd7e14; /* Orange for buttons */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0; /* Remove any default margins */
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%; /* Make the image fill the height of the container */
+  object-fit: cover; /* Maintain aspect ratio while filling container */
+  filter: grayscale(20%) contrast(120%) brightness(60%);
+  margin: 0; /* Remove extra margins */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  background-color: orange;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: aliceblue;
+  backdrop-filter: blur(2px);
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ecf1f5;
+  text-shadow: 2px 2px 4px rgba(32, 31, 30, 0.7);
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(39, 18, 159, 0.6);
+}
+
+/* Button Styling */
+.btn-donate,
+.btn-learn-more {
+  background-color: orange;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-donate:hover,
+.btn-learn-more:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-donate,
+  .btn-learn-more {
+    font-size: 1rem;
+    padding: 8px 25px;
+  }
+
+  /* Adjust hero image */
+  .hero-img {
+    object-fit: cover;
+    height: auto; /* Let the height auto-adjust based on content */
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-donate,
+  .btn-learn-more {
+    font-size: 0.9rem;
+    padding: 6px 20px;
+  }
+
+  /* Ensure the hero section fits smaller screens */
+  .hero {
+    height: 80vh; /* Slightly reduce height for smaller screens */
+  }
+
+  .hero-img {
+    object-fit: cover;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+
+/* We Work Together Section */
+.we-work-together {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 50px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.we-work-together .left-img img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.we-work-together .content {
+  flex: 1;
+}
+
+.we-work-together .tagline {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.we-work-together .headline {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.we-work-together .description {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.stat-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.stat-box i {
+  margin-bottom: 10px;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust the hero image for smaller screens */
+  .hero-img {
+    object-fit: cover;
+    height: 50vh; /* Hero image height reduced */
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+
+  .we-work-together {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 90%; /* Reduce width for smaller screens */
+  }
+
+  .we-work-together .left-img img {
+    max-width: 250px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-box {
+    flex: none;
+    width: 100%;
+  }
+
+  .btn-orange {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero section adjustments */
+  .hero-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  /* Buttons and other sections */
+  .carousel-btn {
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .we-work-together {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .we-work-together .left-img img {
+    max-width: 200px;
+  }
+
+  .btn-orange {
+    padding: 12px 20px;
+  }
+}

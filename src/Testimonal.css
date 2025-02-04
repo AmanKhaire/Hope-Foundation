@@ -1,0 +1,115 @@
+.testimonials-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .section-title h6 {
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  /* Layout for testimonials */
+  .testimonial-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px; /* Image aur text ke beech ka gap */
+  }
+  
+  /* Normal layout (Image left, text right) */
+  .normal-layout {
+    flex-direction: row;
+  }
+  
+  /* Reverse layout (Text left, image right) */
+  .reverse-layout {
+    flex-direction: row-reverse;
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    border: none;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    max-width: 550px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect on Card */
+  .testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Square Testimonial Image */
+  .testimonial-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px; /* Square shape with slightly rounded edges */
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Testimonial Text */
+  .testimonial-text {
+    font-style: italic;
+    color: #444;
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  /* Name & Role */
+  .testimonial-name {
+    font-weight: 700;
+    color: #222;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  .testimonial-role {
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-row {
+      flex-direction: column !important;
+      text-align: center;
+      gap: 15px; /* Mobile pe gap thoda kam */
+    }
+  
+    .testimonial-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .testimonial-card {
+      text-align: center;
+      padding: 25px;
+    }
+  }
+  
