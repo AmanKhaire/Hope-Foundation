@@ -14,14 +14,18 @@ body {
   --highlight-color: #fd7e14; /* Orange for buttons */
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* Full height fix */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove unwanted margins */
 }
+
 
 .carousel-container {
   position: relative;
@@ -32,13 +36,21 @@ body {
   align-items: center;
 }
 
-.hero-img {
+.hero img {
   width: 100%;
-  height: 100%; /* Make the image fill the height of the container */
-  object-fit: cover; /* Maintain aspect ratio while filling container */
-  filter: grayscale(20%) contrast(120%) brightness(60%);
-  margin: 0; /* Remove extra margins */
+  height: 100vh; /* Ensure full coverage */
+  object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 85vh; /* Adjust height for better fit */
+  }
+  
+  .carousel-container {
+    height: 85vh; /* Ensure carousel fits properly */
+  }
+}
+
 
 .carousel-btn {
   position: absolute;

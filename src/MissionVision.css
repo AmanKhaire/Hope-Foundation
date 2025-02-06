@@ -13,6 +13,7 @@
     justify-content: space-between;
     gap: 40px; /* Gap between image & text */
     flex-wrap: wrap; /* Allows wrapping */
+    margin-top: 30px;
 }
 
 /* Image Styling */
@@ -26,10 +27,6 @@
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect on text */
-.section .text:hover {
-    transform: scale(1.05);
-}
 
 /* Text Styling */
 .section .text {
@@ -53,47 +50,4 @@
     text-align: left;
 }
 
-/* Alternating Layout */
-.mission {
-    flex-direction: row-reverse;
-}
 
-.vision {
-    flex-direction: row;
-}
-
-/* 🌟 RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
-    .section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .section img {
-        max-width: 80%; /* Adjusting size */
-        margin-bottom: 10px;
-    }
-
-    .section .text {
-        width: 90%;
-        padding: 0;
-    }
-
-    .section .text h2,
-    .section .text p {
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .section img {
-        max-width: 100%;
-    }
-
-    .section .text {
-        width: 100%;
-        padding: 0 10px;
-    }
-}
